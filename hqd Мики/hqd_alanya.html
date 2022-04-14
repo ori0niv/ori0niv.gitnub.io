@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hqd_Alanya</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: darkmagenta;
+        }
+        header {
+            min-height: 600px;
+            background-image: url('zastavka.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        header h1 {
+            color: whitesmoke;
+            padding-top: 200px;
+            font-size: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            color: white;
+            margin: 0 30px 0 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            background-color: rgb(0,0,0);
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        nav ul li:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .container {
+            width: 1200px;
+            min-height: 700px;
+            /*background-color: rgb(170, 220, 200);*/
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .card {
+            width: 250px;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 250px;
+        }
+
+        .card-info {
+            padding: 0 15px;
+        }
+
+        .card-characteristic {
+            width: 250px;
+            height: 230px;
+            position: absolute;
+
+        }
+        .card-characteristic p {
+            display: none;
+            position: absolute;
+
+        }
+        .card-characteristic p b {
+            position: relative;
+            left: 50px;
+        }
+
+        .card-characteristic p:nth-child(2) {
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+
+        .card-characteristic p:nth-child(3) {
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+        .card-characteristic p:nth-child(4) {
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+        .card-characteristic p:nth-child(5) {
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+
+        .card-characteristic:hover p {
+            display: block;
+
+        }
+
+        .card-characteristic:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .card-characteristic p:first-child {
+            font-size: 20px;
+
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li {
+            list-style: none;
+            border: 1px solid darkgray;
+            font-size: 25px;
+        }
+
+        .menu li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu ul {
+            position: absolute;
+            top: 30px;
+            display: none;
+        }
+
+        .submenu ul li {
+            width: 120px;
+        }
+
+        .submenu ul li a {
+            font-size: 20px;
+            padding: 15px 10px;
+        }
+
+        .submenu:hover > a {
+            color: black;
+        }
+
+        .submenu:hover ul {
+            display: block;
+        }
+
+        .submenu ul li:hover {
+            background-color: coral;
+        }
+
+        /*a {*/
+        /*    text-align: center;*/
+        /*}*/
+
+
+    </style>
+</head>
+<body>
+<header>
+<nav>
+    <ul class="menu">
+<!--        <li><a href="hqd_alanya.html">Главная</a></li>-->
+<!--        <li class="submenu">-->
+<!--            <a href="#">Продукты</a>-->
+<!--            <ul>-->
+<!--                <li><a href="">HQD Cuvie Plus 1200</a></li>-->
+<!--                <li><a href="">HQD King 2000</a></li>-->
+<!--                <li><a href="">HQD Maxim 400 затяжек</a></li>-->
+
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li><a href="">О нас</a></li>-->
+      <li><a href="https://instagram.com/hqd_alanya?igshid=YmMyMTA2M2Y="> instagram: hqd_alanya</a></li>
+
+
+    </ul>
+</nav>
+<h1>Добро пожаловать в Hqd store в Аланье</h1>
+</header>
+
+<div class="container">
+
+        <div class="card">
+
+            <img src="hqd-cuvie-vanil.jpg"/>
+            <div class="card-info">
+                <p>
+                    <strong>Название:</strong>
+                    <span>HQD Cuvie 300</span>
+                </p>
+                <p>
+                    <strong>Вкус:</strong>
+                    <span>Ваниль</span>
+                </p>
+                <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+                </p>
+                <p>
+                    <strong>Цена:</strong>
+                    <span>129₺</span>
+
+                </p>
+            </div>
+        </div>
+
+    <div class="card">
+
+        <img src="hqd-cuv-limon.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Малина Лимон</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="hqd-civ-dzvacka.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Жвачка Арбуз Мята</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img src="hqd-civ-lichi.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Личи Лёд</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-civ-chizcak.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+            <strong>Вкус:</strong>
+            <span>Чизкейк</span>
+        </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-civ-capuchino.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Капучино</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-civ-pinklimonad.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Розовый Лимонад</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-civ-peachice.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie 300</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Персик Лёд</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>129₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="staberyy.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie Plus 1200 </span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Клубника</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>200₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd.grape.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie Plus 1200</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Виноград</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>200₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-cuvie-plus-apple-peach.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie Plus 1200</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Яблоко Персик</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>200₺</span>
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img src="hqd-cuvie-plus-pineapple-ice.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD Cuvie Plus 1200</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Ананас Лёд</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>200₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-king-chernika.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Черника</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-king-grape.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Виноград</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-king-pineapple.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Ананас Лёд</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="hqd-king-pina-colada.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Пина Колада</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="card">
+
+        <img src="hqd-king-pineapple.jpg"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Ананас Лёд</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+
+        <img src="h"/>
+        <div class="card-info">
+            <p>
+                <strong>Название:</strong>
+                <span>HQD king 2000</span>
+            </p>
+            <p>
+                <strong>Вкус:</strong>
+                <span>Пина Колада</span>
+            </p>
+            <p>
+                <strong>Статус:</strong>
+                <span> <a href="">В наличии</a></span>
+            </p>
+            <p>
+                <strong>Цена:</strong>
+                <span>280₺</span>
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
